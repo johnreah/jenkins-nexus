@@ -7,7 +7,12 @@ public class Artifact {
     String version
     String url
 
-//    String toString() {
-//        return sprintf("ArtifactId(%s, %s, %s, %s, %s)", groupId, artifactId, packaging, version, url)
-//    }
+    String toString() {
+        return sprintf("ArtifactId(%s)", groupId)
+        return sprintf("ArtifactId(%s)", artifactId)
+        return sprintf("ArtifactId(%s)", packaging)
+        return sprintf("ArtifactId(%s)", version)
+        return sprintf("ArtifactId(%s)", url)
+        return sprintf("ArtifactId(%s, %s, %s, %s, %s)", groupId, artifactId, packaging, version, url)
+    }
 }
