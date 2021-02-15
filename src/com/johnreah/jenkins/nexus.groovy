@@ -3,7 +3,7 @@ package com.johnreah.jenkins
 import groovy.json.JsonSlurper
 import groovy.transform.ToString
 
-public class JenkinsHelper {
+public class NexusHelper {
 
 }
 
