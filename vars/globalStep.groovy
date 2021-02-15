@@ -11,7 +11,7 @@ def call(List<Artifact> artifacts) {
 
 def findInNexus(Artifact artifact) {
     def connection = new URL(""
-            + "http://localhost:8081/service/rest"
+            + "http://172.17.0.2:8081/service/rest"
             + '/v1/search'
             + "?repository=maven-public"
             + "&group=${artifact.groupId}"
