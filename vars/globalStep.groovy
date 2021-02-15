@@ -19,7 +19,8 @@ def findInNexus(Artifact artifact) {
             + "&sort=version"
             + "&direction=desc")
             .openConnection() as HttpURLConnection
-//    connection.setRequestProperty('Accept', 'application/json')
+    connection.setRequestProperty('Accept', 'application/json')
+    println "RC " + connection.responseCode
 //    if (connection.responseCode == 200) {
 //        def json = connection.inputStream.withCloseable { new JsonSlurper().parse(it) }
 //        def asset = json.items[0].assets.find{it.path.endsWith(artifact.packaging)}
