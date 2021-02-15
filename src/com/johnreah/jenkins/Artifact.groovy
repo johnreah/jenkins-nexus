@@ -8,6 +8,6 @@ public class Artifact {
     String url
 
     String toString() {
-        return "Artifact(${groupId?:'null'}, ${artifactId?:'null'}, ${packaging?:'null'}, ${version?:'null'}, ${url?:'null'})"
+        return { -> "Artifact(${groupId?:'null'}, ${artifactId?:'null'}, ${packaging?:'null'}, ${version?:'null'}, ${url?:'null'})"}
     }
 }
