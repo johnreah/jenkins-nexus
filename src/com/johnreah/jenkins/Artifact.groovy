@@ -9,11 +9,11 @@ public class Artifact {
 
     String toString() {
         return "ArtifactId(" +
-                groupId ?: 'xxx' +
-                artifactId ?: 'xxx' +
-                packaging ?: 'xxx' +
-                version ?: 'xxx' +
-                url ?: 'xxx' +
+                (groupId ?: 'xxx') + ", " +
+                (artifactId ?: 'xxx') + ", " +
+                (packaging ?: 'xxx') + ", " +
+                (version ?: 'xxx') + ", " +
+                (url ?: 'xxx') +
                 ")"
     }
 }
