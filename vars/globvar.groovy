@@ -1,4 +1,4 @@
-def globalMethod() {
+static globalMethod() {
     println "This is globvar"
 }
 
