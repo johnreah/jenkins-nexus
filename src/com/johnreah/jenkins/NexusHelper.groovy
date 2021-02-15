@@ -5,6 +5,10 @@ import groovy.transform.ToString
 
 public class NexusHelper {
 
+    public void run(String s) {
+        println "NexusHelper says " + s
+    }
+
 }
 
 //@ToString
