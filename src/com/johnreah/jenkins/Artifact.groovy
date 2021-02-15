@@ -1,8 +1,5 @@
 package com.johnreah.jenkins
 
-import groovy.transform.ToString
-
-//@ToString
 public class Artifact {
     String groupId
     String artifactId
@@ -11,6 +8,6 @@ public class Artifact {
     String url
 
     String toString() {
-        return "TOSTRING artifactId: " + artifactId
+        return "Artifact(${groupId}, ${artifactId}, ${packaging}, ${version}, ${url})"
     }
 }
