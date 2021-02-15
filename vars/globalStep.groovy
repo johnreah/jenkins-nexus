@@ -3,7 +3,7 @@ import com.johnreah.jenkins.Artifact
 
 def call(List<Artifact> artifacts) {
     artifacts.each {
-        println "Artifact: " + it
+        println "Artifact: " + it.toString()
     }
 }
 
