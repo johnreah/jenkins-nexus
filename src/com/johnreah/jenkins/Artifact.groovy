@@ -8,6 +8,11 @@ public class Artifact {
     String url
 
     String toString() {
-        return sprintf("ArtifactId(%s, %s, %s, %s, %s)", groupId, artifactId, packaging, version, url)
+        return sprintf("ArtifactId(%s, %s, %s, %s, %s)",
+                groupId ?: 'null',
+                artifactId ?: 'null',
+                packaging ?: 'null',
+                version ?: 'null',
+                url ?: 'null')
     }
 }
