@@ -20,13 +20,12 @@ def findInNexus(Artifact artifact) {
             + "&direction=desc")
             .openConnection() as HttpURLConnection
     connection.setRequestProperty('Accept', 'application/json')
-    println "RC " + connection.responseCode
-//    if (connection.responseCode == 200) {
-//        def json = connection.inputStream.withCloseable { new JsonSlurper().parse(it) }
-//        def asset = json.items[0].assets.find{it.path.endsWith(artifact.packaging)}
-//        artifact.version = asset.maven2.version
-//        artifact.url = asset.downloadUrl
-//    } else {
-//        throw new Exception("connection error")
-//    }
+    if (connection.responseCode == 200) {
+        def json = connection.inputStream { new JsonSlurper().parse(it) }
+        def asset = json.items[0].assets.find{it.path.endsWith(artifact.packaging)}
+        artifact.version = asset.maven2.version
+        artifact.url = asset.downloadUrl
+    } else {
+        throw new Exception("connection error")
+    }
 }
