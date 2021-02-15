@@ -1,6 +1,8 @@
 package com.johnreah.jenkins
 
-//@ToString
+import groovy.transform.ToString
+
+@ToString
 public class Artifact {
     String groupId
     String artifactId
