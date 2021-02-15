@@ -1,7 +1,12 @@
-//#!/usr/bin/env groovy
-//import groovy.json.JsonSlurper
-//import groovy.transform.ToString
-//
+package com.johnreah.jenkins
+
+import groovy.json.JsonSlurper
+import groovy.transform.ToString
+
+public class JenkinsHelper {
+
+}
+
 //@ToString
 //class Artifact {
 //    String groupId
