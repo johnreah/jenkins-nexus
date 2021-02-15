@@ -1,6 +1,9 @@
 #!/usr/bin/env groovy
+import com.johnreah.jenkins.Artifact
 
-def call(String input = 'unspecified') {
-    println "This is globalStep, value = " + input
+def call(List<Artifact> artifacts) {
+    artifacts.each {
+        println "Artifact: " + it.artifactId
+    }
 }
 

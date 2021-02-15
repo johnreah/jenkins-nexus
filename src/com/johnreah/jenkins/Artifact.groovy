@@ -1,5 +1,7 @@
+package com.johnreah.jenkins
+
 //@ToString
-class Artifact {
+public class Artifact {
     String groupId
     String artifactId
     String packaging
