@@ -9,6 +9,7 @@ def call(List<Artifact> artifacts) {
     }
 }
 
+@NonCPS
 def findInNexus(Artifact artifact) {
     def connection = new URL(""
             + "http://172.17.0.2:8081/service/rest"
