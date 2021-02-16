@@ -3,14 +3,14 @@ package com.johnreah.jenkins
 import groovy.json.JsonSlurper
 import groovy.transform.ToString
 
-public class NexusHelper {
+class NexusHelper {
 
     String apiRoot
 
     @NonCPS
     def findInNexus(Artifact artifact) {
         def connection = new URL(""
-                + apiRoot //"http://172.17.0.2:8081/service/rest"
+                + apiRoot
                 + '/v1/search'
                 + "?repository=maven-public"
                 + "&group=${artifact.groupId}"
