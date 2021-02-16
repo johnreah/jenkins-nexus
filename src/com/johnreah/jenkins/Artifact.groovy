@@ -1,6 +1,6 @@
 package com.johnreah.jenkins
 
-public class Artifact {
+class Artifact {
     String groupId
     String artifactId
     String packaging
