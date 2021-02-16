@@ -1,5 +1,6 @@
 package com.johnreah.jenkins
 
+@NonCPS
 public class Artifact {
     String groupId
     String artifactId
