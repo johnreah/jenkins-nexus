@@ -5,7 +5,7 @@ import groovy.json.JsonSlurper
 def call(List<Artifact> artifacts) {
     artifacts.each {
         findInNexus it
-        println "Artifact: " + it.toString()
+        println "Artifact: " + it
     }
 }
 
