@@ -1,6 +1,5 @@
 package com.johnreah.jenkins
 
-@NonCPS
 public class Artifact {
     String groupId
     String artifactId
@@ -18,6 +17,7 @@ public class Artifact {
 //                ")"
 //    }
 
+    @NonCPS
     String toString() {
         return "ArtifactId(${groupId}, ${artifactId}, ${packaging}, ${version}. ${url})"
     }
