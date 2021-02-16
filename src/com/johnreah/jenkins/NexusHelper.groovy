@@ -1,8 +1,10 @@
 package com.johnreah.jenkins
 
 import groovy.json.JsonSlurper
-import groovy.transform.ToString
 
+/**
+ * Nexus API methods to search for artifacts in a repository.
+ */
 class NexusHelper {
 
     String apiRoot
